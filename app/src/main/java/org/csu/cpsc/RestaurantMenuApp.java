@@ -1,5 +1,7 @@
+package org.csu.cpsc;
+
 // Data Structures Assignment (single-file version)
-// Requirements tagged Req1-Req6
+// Requirements tagged Req1–Req6
 
 import java.util.*;
 import java.io.*;
@@ -58,20 +60,20 @@ class Menu {
     private int count;
 
     public Menu(int size) { menuList = new MenuItem[size]; }
-    public Menu() { this(10); }                     // default
+    public Menu() { this(10); } // default
 
     public void addItem(MenuItem item) { menuList[count++] = item; }
 
-    public void printMenu() {                       // Req2 – printMenu
+    public void printMenu() { // Req2 – printMenu
         for (int i = 0; i < count; i++)
             System.out.println(menuList[i]);
     }
 
-    public int size()  { return count; }
+    public int size() { return count; }
     public MenuItem get(int i) { return menuList[i]; }
 }
 
-/* Req3-Req6: UserInterface */
+/* Req3–Req6: UserInterface */
 class UserInterface {
     private Menu restaurantMenu = new Menu();
 
